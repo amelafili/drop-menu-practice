@@ -1,0 +1,125 @@
+/* set body background to white,
+removed margins */
+body {
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+/*sets background img for container div, 
+set background to cover whole page and not repeat
+sets height to fit all content
+margin to seperate divs*/
+.container { 
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: auto;
+    margin-top: 5px;
+    padding-top: 4px; 
+}
+
+/* aligns welcome line */
+.context h1 {
+    text-align: center;
+}
+
+/* background color is white for context div,
+margins are set to auto,
+width is set to be more wide
+border set along div */
+.context {
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 5px;
+    width: 90%;
+    border: 3px solid#2c5218;
+    padding: 9x;
+    height: 100%;
+}
+
+/* removed margins and padding,
+added gradient border and background to nav
+width set to take up whole page */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right,#63b075 10%, #4e6841 70%);
+    width: auto;
+    font-family: Georgia, serif;
+    border: 5px solid;
+    border-image: linear-gradient(to bottom, #314726 0%, #63b075 100%);
+    border-image-slice: 1;
+}
+
+/* sets navigation links horizontally,
+adds width to take up width of page,
+border added between list items,
+added outline on list items text
+ */
+nav li {
+    float: left;
+    width: 22%;
+    padding: 9px 17px;
+    border-right: 1px dotted #2c5218;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+/* links are centered
+displayed horizontally 
+padding to add space between list items
+font size changed*/
+nav li a, .button {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 19px;
+    width: auto;
+    font-size: 30px;
+}
+
+/* background color changed when links are hovered */
+nav li a:hover, .menu_dropdown:hover .button {
+    background-color: #2c5218;
+}
+
+/* dropdown links have background color, shad owaround
+dropdown box, font size set,  */
+.dropdown_links {
+    display: none;
+    position: absolute;
+    background-color: #63b075;
+    min-width: 160px;
+    box-shadow: 0px 8px 31px 0px #000000;
+    font-size: 14px;
+}
+
+/* white font color,
+displayed vertically,
+text centered */
+.dropdown_links a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    text-shadow: none;
+    text-align: center;
+}
+
+/* hover color for when dropdown links are hovered over */
+.dropdown_links a:hover {
+      background-color: #2c5218;
+}
+  
+/* displays dropdown links vertically when dropdown button is 
+hovered */
+.menu_dropdown:hover .dropdown_links {
+    display: block;
+}
